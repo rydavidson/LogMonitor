@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logmonitor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="config.xsd" >
+	<!--
+		Each 'log' element corresponds to a log file to be monitored, names must be unique,
+		types must be valid monitor types defined in the 'monitors' section below. 
+		
+		The value of the 'location' attribute depends on what type of monitor has been selected; 'test'
+		monitors ignore the location value, 'log' and 'file' monitors expect an absolute path to a
+		file on the local file system.
+		
+		Filter values should be valid java.util.Pattern regular expressions.
+	-->
+	<logs>
+		<log name="Test Log" type="test" location="">
+			<options showDividers="true" interval="5" lines="12" />
+			<styles>
+				<style visible="true" foreColour="#0000FF" backColour="#DDDDFF" />
+				<style visible="false" />
+				<style visible="false" />
+				<style visible="true" foreColour="#000000" backColour="#FFFFDD" />
+				<style visible="true" foreColour="#FF0000" backColour="#FFDDDD" />
+				<style visible="true" foreColour="#00FF00" backColour="#DDFFDD" />
+			</styles>
+		</log>
+		<log name="404 Filter" type="test" location="">
+			<options showDividers="true" interval="10" lines="5" />
+			<styles>
+				<style/>
+				<style/>
+				<style/>
+				<style/>
+				<style/>
+				<style visible="true" foreColour="#000000" backColour="#FFFF00" />
+			</styles>
+			<filter>.*404.*</filter>
+		</log>
+		<log name="Plain" type="test" location="" >
+			<options showDividers="true" interval="5" lines="10" />
+			<styles>
+				<style visible="true" foreColour="#000000" backColour="#DDDDDD" />
+				<style visible="true" foreColour="#000000" backColour="#FFFFFF" />
+				<style visible="true" foreColour="#000000" backColour="#DDDDDD" />
+				<style visible="true" foreColour="#000000" backColour="#FFFFFF" />
+				<style visible="true" foreColour="#000000" backColour="#DDDDDD" />
+				<style visible="true" foreColour="#000000" backColour="#FFFFFF" />
+				<style visible="true" foreColour="#000000" backColour="#DDDDDD" />												
+			</styles>
+
+		</log>
+	</logs>  
+	
+	<!--
+		All log types mentioned in the 'logs' section must have an entry here. All monitor classes 
+		must extend the class net.noip.codebox.logmonitor.target.AbstractMonitor
+	-->
+	<monitors>
+		<monitor type="test" class="net.noip.codebox.logmonitor.target.TestFileMonitor" />
+		<monitor type="file" class="net.noip.codebox.logmonitor.target.FileMonitor" />
+		<monitor type="log"  class="net.noip.codebox.logmonitor.target.LogFileMonitor" />
+	</monitors>
+	
+	<!-- Most of these are self-explanatory, but be careful when changing them -->
+	<configs>
+		<config name="appName"             value="LogMonitor" />
+		<config name="appVersion"          value="v0.3.3" />
+		<config name="appLink"             value="http://codebox.no-ip.net/controller?page=logmonitor" />
+		<config name="appLinkText"         value="Codebox Software" />
+		<config name="cookieLifeDays"      value="100" />
+		<config name="styleCount"          value="10" />
+		<config name="defaultLines"        value="3" />
+		<config name="defaultInterval"     value="3" />
+		<config name="defaultShowDividers" value="false" />
+		<config name="defaultForeColour"   value="#000000" />
+		<config name="defaultBackColour"   value="#FFFFFF" />
+	</configs>
+</logmonitor>

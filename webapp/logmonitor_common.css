@@ -1,0 +1,207 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	background-color: white;		
+}
+span{
+	margin: 0px;
+	padding: 0px;	
+}
+#mainArea, #textArea, #leftBar, .logLink, .logLinkFocus, .logLinkChanged, .logLinkFocusChanged, .logLinkBroken,
+#optionsButton, #txtLines, #btnOptionsOk, #btnOptionsCancel, #txtRefresh,
+#progressOuter, #progressInner, #floater, #debug, #controlPanelArea, #updateNowButton, #styles, 
+#stylesButton, #filterBox, #filterButton, #versionBox, #errorBox {
+    border-width: 1px;
+    border-style: solid;   
+}
+#btnOptionsOk, #btnOptionsCancel, #filterButton{
+	cursor: hand;
+	cursor: pointer;	
+}
+#progressInner{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+#leftBar, .logLink, .logLinkChanged, .logLinkFocus, .logLinkFocusChanged, .logLinkBroken{
+	font-family: sans-serif;
+	font-size: small;
+}
+.logLink, .logLinkChanged, .logLinkFocus, .logLinkFocusChanged, .logLinkBroken{
+	overflow: hidden;	
+}
+
+#floater{
+	display: none;
+}
+#textArea{
+	font-family: Courier, monospace;
+	font-size: small;
+	word-wrap: break-word;
+	overflow: auto;
+}
+#errorBox{
+	background-color: white;
+	z-index: 2;
+	text-align: center;
+	font-family: Courier, monospace;
+}
+#errorBoxTitle{
+	font-family: sans-serif;	
+	text-decoration: underline;
+	font-weight: bold;	
+}
+#errorBoxFooter{
+	font-family: sans-serif;	
+	text-align: center;
+	font-size: 0.8em;		
+}	
+#debug{
+	border-color: black;
+	overflow: scroll;
+}
+
+.divButton{
+    font-family: sans-serif;
+    font-size: small;
+    text-align: center;
+    line-height: 20px;
+}
+#updateNowButton, #optionsButton, #stylesButton, #filterButton{
+    line-height: 24px;
+}
+#versionBox{
+	padding-top:    12px;
+	padding-bottom: 12px;
+	padding-left:   2px;
+	padding-right:  2px;
+    text-align: center;	
+	font-family: sans-serif;
+	font-size: small;
+	margin-top: 15px;	
+}
+#versionBox a{
+	font-size: 0.8em;
+}
+#filterBox{
+	padding: 3px;	
+}
+/* Options Panel */
+#options,#lblLines, #txtLines, #lblRefresh, #txtRefresh, #lblTitle, #styles{
+    font-family: sans-serif;
+    font-size: small;
+}
+#lblTitle{
+    text-align: center;
+    text-decoration: underline;   
+    font-weight: bold;
+}
+
+#txtLines, #txtRefresh{
+    padding: 1px;
+}
+div.divider {
+	height: 1px;
+	margin: 0px;
+	border-top: 1px solid;
+	padding: 0px;
+	display: block;
+	font-size: 1px;
+	overflow: hidden;
+	width: 100%;
+}
+/* ---------- Options Panel -------------------*/
+#chkShowDividers{
+	margin: 3px 0px 0px 0px;	
+	border: 1px solid;
+}
+#options{
+    border: 1px solid;	
+    display: none;    
+}
+#options, #lblLines, #txtLines, #lblRefresh, #txtRefresh, #btnOptionsOk, #btnOptionsCancel, #lblTitle, #chkShowDividers{
+    color: #3082BF;
+}
+#options{
+    border-color: #3082BF;	
+    background-color: white;
+}
+#txtLines, #btnOptionsOk, #btnOptionsCancel, #txtRefresh{
+    border-color: #3082BF;	
+    background-color: white;
+}
+#btnOptionsOk:hover, #btnOptionsCancel:hover{
+    background-color: #E6F4FF;
+}
+#optionsErrMsg{
+	text-align: left;
+	display: none;
+	border: 1px solid red;
+	padding: 2px;
+	padding-left: 10px;
+	color: red;
+}
+input.errField{
+	background-colour: red;
+}
+/* ---------- Styles Panel --------------------*/
+#styles, #btnStylesOk, #btnStylesCancel, #txtColStyle, #selColStyle, #lblStylesTitle{
+    color: #3082BF;
+    background-color: white;
+}
+#lblStylesTitle{
+    font-weight: bold;
+    text-decoration: underline;  
+    text-align: center; 
+}
+#styles{
+    border: 1px solid;   
+    display: none;
+}
+#txtColStyle, #selColStyle, #colourPicker{
+    border: 1px solid;   
+}
+#colourPicker{
+    padding: 1px;
+}
+#btnStylesOk, #btnStylesCancel, #btnStylesApply{
+    border: 1px solid;   
+    cursor: hand;
+    cursor: pointer;	
+    text-align: center;
+    line-height: 20px;
+}
+#btnStylesOk:hover, #btnStylesCancel:hover{
+    background-color: #E6F4FF;
+}
+
+.colourBox, .colourBoxSelected{
+    border: 1px solid gray; 
+    float: left;    
+	cursor: hand;
+	cursor: pointer;	
+}
+#styleSample{
+    border: 1px solid #3082BF;   
+}
+.radioStyle{
+    
+}
+#noscriptMessage{
+	text-align: center;
+	font-size: 3em;
+	color: red;
+	font-family: Arial, sans-serif;	
+	position: absolute;
+	z-index: 5;
+	padding: 10px;
+}
+
+/* --------------------------------------------*/
+.dialogHidden{
+    display: none;   
+}
+.dialogVisible{
+    display: block;   
+}

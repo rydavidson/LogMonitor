@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+
+#textArea, #controlPanelArea, #mainArea, .logLinkFocus, .logLinkFocusChanged{
+    border-color: #507EA1;
+}
+
+#leftBar, #optionsButton, #updateNowButton, #progressOuter, #progressInner, #floater, 
+.logLink, .logLinkChanged, #styles, #stylesButton, #filterBox, #filterButton, #versionBox {
+	border-color: #507EA1;	
+}
+
+#optionsButton, #leftBar, #textArea, #progressOuter, #progressInner, #controlPanelArea, #stylesButton, 
+#filterBox, #versionBox{
+    background-color: white;		
+}
+
+#mainArea, .logLinkFocus, .logLinkFocusChanged, #progressInner{
+    background-color: #3082BF;	
+}
+.logLinkChanged{
+    background-color: #E6F4FF;	
+}
+
+#progressInner, .logLinkFocus, .logLinkFocusChanged{
+    color: white;
+}
+
+#textArea, .logLink, .logLinkChanged, #updateNowButton, #optionsButton, #stylesButton, #filterBox, 
+#filterButton, #versionBox, a{
+    color: #3082BF;
+}
+.logLinkBroken, #errorBox{
+	color: red;
+	border-color: read;
+}
+.logLink, .logLinkChanged, .logLinkBroken, #updateNowButton, #optionsButton, #stylesButton{
+	cursor: hand;
+	cursor: pointer;	
+}

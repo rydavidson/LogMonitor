@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<description>Log Monitor Controller</description>
+		<display-name>Log Monitor Controller</display-name>
+		<servlet-name>Controller</servlet-name>
+		<servlet-class>net.noip.codebox.logmonitor.web.Controller</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Controller</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>view</welcome-file>
+	</welcome-file-list>
+</web-app>

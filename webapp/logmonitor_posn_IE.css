@@ -1,0 +1,257 @@
+@CHARSET "ISO-8859-1";
+/* #mainArea, #leftBar, .logLink, #textArea, .logLinkFocus, #updateButton, 
+.logLinkChanged, .logLinkFocusChanged,#progressOuter, #progressInner, #controlPanelArea, 
+#updateNowButton, #filterBox, #filterButton {
+	position: absolute;
+}*/
+body{
+	margin: 0px;	
+}
+#leftBar{
+	position: absolute;
+	margin: 2px;
+	width: 110px;
+	padding: 0px;
+}
+#mainArea{
+	position: absolute;	
+	margin-top: 2px;
+	left: 116px;
+	height: 400px;	
+}
+#textArea{
+	margin: 2px;
+	height: 358px;
+	bottom: 36px;
+}
+#errorBox{
+	position: absolute;
+	width: 30em;
+	top: 50%;
+	left: 50%;
+	margin-left: -15em;
+	margin-top: -4em;
+}
+#errorBoxTitle{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+#errorBoxFooter{
+	margin-top: 0.5em;
+	margin-bottom: 1em;	
+}
+#controlPanelArea{
+	margin: 2px;
+    height: 32px;
+}
+#progressOuter{
+	margin-top: 2px;	
+	margin-right: 3px;
+	margin-left: 1px;
+	float: left;
+    height: 24px;
+    width: 100px;   
+    padding: 1px;
+}
+#progressInner{
+    height: 22px;
+    line-height: 22px;
+}
+#updateNowButton{
+	margin-top: 3px;	
+	margin-right: 3px;
+	float: left;
+    height: 24px;
+    width: 60px;   
+}
+#optionsButton{
+	margin-top: 3px;	
+	margin-right: 3px;
+	float: left;
+    height: 24px;
+    width: 60px;   
+}
+#stylesButton{
+	margin-top: 3px;	
+	margin-right: 3px;
+	float: left;
+    height: 24px;
+    width: 60px;       
+}
+#filterBox{
+	margin-top: 3px;	
+	margin-right: 1px;
+	float: right;
+	height: 18px;
+	width: 100px;
+}
+#filterButton{
+	margin-top: 3px;	
+	margin-right: 3px;
+	float: right;
+	height: 24px;
+	width: 46px;
+}
+.logLink, .logLinkFocus, .logLinkChanged, .logLinkFocusChanged, .logLinkBroken {
+	height: 16px;
+}
+.logLinkFocus, .logLinkFocusChanged{
+	width: 100px;
+	padding: 2px;	
+	margin-right: 0px;
+}
+#leftBar, .logLink, .logLinkChanged, .logLinkFocus, .logLinkFocusChanged, .logLinkBroken, #versionBox{
+	margin: 2px;
+}
+#floater{
+	position: absolute;
+	width: 10px;
+	left: 122px;	
+	height: 18px;
+}
+
+.logLink, .logLinkChanged, .logLinkBroken{
+	width: 100px;
+	padding: 2px;		
+}
+
+#debug{
+	right: 2px;
+	left: 2px;
+	height: 100px;
+	position: absolute;
+	left: 2px;
+	bottom: 2px;
+}
+
+/* Options Panel */
+#options, #lblLines, #txtLines, #lblRefresh, #txtRefresh, #btnOptionsOk, 
+#btnOptionsCancel, #lblTitle, #txtColStyle, #selColStyle, #styles, #btnApplyStyle,
+#btnDoneStyles, #lblStylesTitle, #colourPicker, #btnStylesOk, #btnStylesCancel,
+#styleTypeHide, #styleTypeDefault, #styleTypeColour, #lblStylesRadioHide, 
+#lblStylesRadioDefault, #lblStylesRadioColour, #btnStylesApply, 
+#colourTypeFore, #colourTypeBack, #lblStylesForeColour, #lblStylesBackColour,
+#lblCheckStyleHidden, #checkStyleHidden, #styleSample, #lblShowDividers, 
+#chkShowDividers, #optionsErrMsg{
+    position: absolute;    
+}
+#btnOptionsOk, #btnOptionsCancel{
+    height: 20px;
+    width: 100px;
+    bottom: 20px;
+}
+#btnOptionsOk{
+    left: 90px;   
+}
+#btnOptionsCancel{
+    right: 90px;
+}
+#optionsErrMsg{
+	text-align: center;
+	width: 300px;
+	left: 50px;
+	top: 150px;
+}
+
+#options, #styles{
+    height: 300px;
+    width: 400px;
+}
+
+
+#lblLines, #txtLines{
+    top: 50px;
+    height: 20px;
+}
+#lblRefresh, #txtRefresh{
+    top: 80px;
+    height: 20px;
+}
+#lblShowDividers {
+    top: 110px;
+    height: 20px;
+}
+#chkShowDividers{
+	 top: 110px;
+	 left: 200px;
+ }
+#lblLines, #lblRefresh, #lblShowDividers{
+    left: 20px;   
+    width: 180px;       
+}
+#txtLines, #txtRefresh{
+    left: 200px;   
+    width: 40px;       
+}
+#lblTitle{
+    top: 10px;
+    width: 100%;   
+}
+
+/* Styles Panel */
+#lblStylesTitle{
+    top: 10px;
+    width: 100%;   
+}
+#selColStyle{
+    left: 30px;
+    width: 60px;
+    height: 190px;
+}
+#txtColStyle{
+    left: 100px;   
+    width: 60px;
+}
+#selColStyle{
+    top: 50px;   
+}
+#btnStylesOk, #btnStylesCancel, #btnStylesApply {
+    height: 20px;
+    width: 70px;
+    bottom: 20px;
+}
+#btnStylesOk{
+    left: 100px;    
+}
+#btnStylesCancel{
+    left: 230px;
+}
+#colourPicker{
+    left: 240px;
+    top: 50px;
+    height: 182px;
+    width: 130px;   
+}
+.colourBox{
+    height: 20px; 
+    width: 20px;
+    margin: 2px;
+}
+.colourBoxSelected{
+    height: 24px; 
+    width: 24px;
+    margin: 0px;
+}
+
+/* Radio buttons for fore/back colour */
+#colourTypeFore, #colourTypeBack, #checkStyleHidden{
+    left: 120px;   
+}
+#lblStylesForeColour, #lblStylesBackColour, #lblCheckStyleHidden{
+    left: 140px;
+}
+#lblCheckStyleHidden, #checkStyleHidden{
+    top: 80px;   
+}
+#colourTypeFore, #lblStylesForeColour{
+    top: 100px;   
+}
+#colourTypeBack, #lblStylesBackColour{
+    top: 120px;   
+}
+#styleSample{
+    top: 50px;
+    left: 120px; 
+    height: 16px;
+    width: 90px;  
+}

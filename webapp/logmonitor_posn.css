@@ -1,0 +1,238 @@
+@CHARSET "ISO-8859-1";
+
+#mainArea, #leftBar, #textArea, #controlPanelArea {
+	position: absolute;
+}
+#controlPanelArea{
+    left: 2px;
+    height: 30px;
+    right: 2px;
+    bottom: 2px;   
+}
+#progressOuter{
+	float: left;
+    height: 22px;
+    width: 100px;   
+    padding: 2px;
+    margin: 1px;
+}
+#progressInner{
+    height: 20px;
+    line-height: 20px;
+}
+#updateNowButton{
+	float: left;
+    height: 24px;
+    width: 60px;   
+    margin: 2px;    
+}
+#filterBox{
+	float: right;
+	height: 18px;
+	width: 100px;
+    margin: 2px;	
+}
+#filterButton{
+	float: right;
+	height: 24px;
+	width: 46px;
+    margin: 2px;	
+}
+.logLink, .logLinkFocus, .logLinkChanged, .logLinkFocusChanged, .logLinkBroken {
+	height: 16px;
+}
+.logLinkFocus, .logLinkFocusChanged{
+	width: 111px;
+	padding: 2px;	
+}
+#leftBar, .logLink, .logLinkChanged, .logLinkFocus, .logLinkFocusChanged, .logLinkBroken, #versionBox{
+	margin: 2px;
+}
+#mainArea{
+	top: 2px;	
+	left: 120px;
+	right: 2px;
+	bottom: 2px;
+	margin: 2px;	
+}
+#leftBar{
+	top: 2px;
+	left: 2px;
+	width: 110px;
+}
+
+.logLink, .logLinkChanged, .logLinkBroken{
+	width: 100px;
+	padding: 2px;		
+}
+#textArea{
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 36px;
+}
+#errorBox{
+	position: absolute;
+	width: 30em;
+	top: 50%;
+	left: 50%;
+	margin-left: -15em;
+	margin-top: -4em;
+}
+#errorBoxTitle{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+#errorBoxFooter{
+	margin-top: 0.5em;
+	margin-bottom: 1em;	
+}
+#debug{
+	right: 2px;
+	left: 2px;
+	height: 100px;
+	position: absolute;
+	left: 2px;
+	bottom: 2px;
+}
+
+/* Options Panel */
+#options, #lblLines, #txtLines, #lblRefresh, #txtRefresh, #btnOptionsOk, 
+#btnOptionsCancel, #lblTitle, #txtColStyle, #selColStyle, #styles, #btnApplyStyle,
+#btnDoneStyles, #lblStylesTitle, #colourPicker, #btnStylesOk, #btnStylesCancel,
+#styleTypeHide, #styleTypeDefault, #styleTypeColour, #lblStylesRadioHide, 
+#lblStylesRadioDefault, #lblStylesRadioColour, #btnStylesApply, 
+#colourTypeFore, #colourTypeBack, #lblStylesForeColour, #lblStylesBackColour,
+#lblCheckStyleHidden, #checkStyleHidden, #styleSample, #lblShowDividers, 
+#chkShowDividers, #optionsErrMsg{
+    position: absolute;    
+}
+#btnOptionsOk, #btnOptionsCancel{
+    height: 20px;
+    width: 100px;
+    bottom: 20px;
+}
+#btnOptionsOk{
+    left: 90px;   
+}
+#btnOptionsCancel{
+    right: 90px;
+}
+#optionsErrMsg{
+	width: 300px;
+	left: 50px;
+	top: 150px;
+}
+#options, #styles{
+    height: 300px;
+    width: 400px;
+}
+
+#optionsButton{
+	float: left;
+    height: 24px;
+    width: 60px;   
+    margin: 2px;    
+}
+#stylesButton{
+	float: left;
+    height: 24px;
+    width: 60px;
+    margin: 2px;           
+}
+#lblLines, #txtLines{
+    top: 50px;
+    height: 20px;
+}
+#lblRefresh, #txtRefresh{
+    top: 80px;
+    height: 20px;
+}
+#lblShowDividers {
+    top: 110px;
+    height: 20px;
+}
+#chkShowDividers{
+	 top: 110px;
+	 left: 200px;
+ }
+#lblLines, #lblRefresh, #lblShowDividers{
+    left: 20px;   
+    width: 180px;       
+}
+#txtLines, #txtRefresh{
+    left: 200px;   
+    width: 40px;       
+}
+#lblTitle{
+    top: 10px;
+    width: 100%;   
+}
+
+/* Styles Panel */
+#lblStylesTitle{
+    top: 10px;
+    width: 100%;   
+}
+#selColStyle{
+    left: 30px;
+    width: 60px;
+    height: 190px;
+}
+#txtColStyle{
+    left: 100px;   
+    width: 60px;
+}
+#selColStyle{
+    top: 50px;   
+}
+#btnStylesOk, #btnStylesCancel{
+    height: 20px;
+    width: 100px;
+    bottom: 20px;
+}
+#btnStylesOk{
+    left: 90px;      
+}
+#btnStylesCancel{
+    right: 90px;  
+}
+#colourPicker{
+    left: 240px;
+    top: 50px;
+    height: 182px;
+    width: 130px;   
+}
+.colourBox{
+    height: 20px; 
+    width: 20px;
+    margin: 2px;
+}
+.colourBoxSelected{
+    height: 24px; 
+    width: 24px;
+    margin: 0px;
+}
+
+/* Radio buttons for fore/back colour */
+#colourTypeFore, #colourTypeBack, #checkStyleHidden{
+    left: 120px;   
+}
+#lblStylesForeColour, #lblStylesBackColour, #lblCheckStyleHidden{
+    left: 140px;
+}
+#lblCheckStyleHidden, #checkStyleHidden{
+    top: 80px;   
+}
+#colourTypeFore, #lblStylesForeColour{
+    top: 100px;   
+}
+#colourTypeBack, #lblStylesBackColour{
+    top: 120px;   
+}
+#styleSample{
+    top: 50px;
+    left: 120px; 
+    height: 16px;
+    width: 90px;  
+}

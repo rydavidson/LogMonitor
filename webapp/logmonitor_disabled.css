@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+#textArea, #controlPanelArea, #mainArea, .logLinkFocus, .logLinkFocusChanged, .logLinkBroken, #errorBox{
+    border-color: rgb(200,200,200);
+}
+
+#leftBar, #optionsButton, #updateNowButton, #progressOuter, #progressInner, #floater, 
+.logLink, .logLinkChanged, #stylesButton, #filterBox, #filterButton, #versionBox {
+	border-color: rgb(200,200,200);	
+}
+
+#optionsButton, #leftBar, #textArea, #progressOuter, #progressInner, #controlPanelArea, #stylesButton, 
+#filterBox, #versionBox{
+    background-color: white;		
+}
+
+#mainArea, .logLinkFocus, .logLinkFocusChanged, .logLinkChanged, .logLinkBroken, #progressInner{
+    background-color: rgb(200,200,200);	
+}
+
+#progressInner, .logLinkChanged, .logLinkFocus, .logLinkFocusChanged, .logLinkBroken{
+    color: white;
+}
+#textArea, .logLink, #updateNowButton, #optionsButton, #stylesButton, #filterBox, #filterButton, 
+#versionBox, a,  #errorBox {
+    color: rgb(200,200,200);
+}
+
+
+

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:complexType name="logMonitorType">
+    	<xs:sequence>
+			<xs:element name="logs"     type="logsType"/>
+			<xs:element name="monitors" type="monitorsType"/>
+			<xs:element name="configs"  type="configsType"/>			
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="logsType">
+		<xs:sequence>
+			<xs:element name="log" type="logType" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>	
+	</xs:complexType>
+	
+	<xs:complexType name="monitorsType">
+		<xs:sequence>
+			<xs:element name="monitor" type="monitorType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>	
+	</xs:complexType>
+		
+	<xs:complexType name="logType">
+		<xs:sequence>
+			<xs:element name="options" type="optionsType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="styles"  type="stylesType"  minOccurs="0" maxOccurs="1" />
+			<xs:element name="filter"  type="xs:string"   minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+		<xs:attribute name="name"     type="xs:string" use="required"/>
+		<xs:attribute name="type"     type="xs:string" use="required"/>
+		<xs:attribute name="location" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<xs:complexType name="monitorType">
+		<xs:attribute name="type"  type="xs:string" use="required"/>
+		<xs:attribute name="class" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="optionsType">
+		<xs:attribute name="showDividers" type="xs:boolean" use="optional"/>
+		<xs:attribute name="interval"     type="xs:int"     use="optional"/>		
+		<xs:attribute name="lines"        type="xs:int"     use="optional"/>
+	</xs:complexType>
+	
+	<xs:complexType name="stylesType">
+		<xs:sequence>
+			<xs:element name="style" type="styleType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>	
+	</xs:complexType>
+	
+	<xs:complexType name="styleType">
+		<xs:attribute name="visible"    type="xs:boolean" use="optional"/>		
+		<xs:attribute name="foreColour" type="colourType" use="optional"/>
+		<xs:attribute name="backColour" type="colourType" use="optional"/>		
+	</xs:complexType>
+
+	<xs:complexType name="configsType">
+		<xs:sequence>
+			<xs:element name="config" type="configType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>	
+	</xs:complexType>
+	
+	<xs:complexType name="configType">
+		<xs:attribute name="name"  type="xs:string" use="required"/>		
+		<xs:attribute name="value" type="xs:string" use="required"/>
+	</xs:complexType>
+
+	<xs:simpleType name="colourType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="#[0-9A-Fa-f]{6}"/>
+		</xs:restriction>
+	</xs:simpleType>	
+	
+	<xs:element name="logmonitor" type="logMonitorType" />
+	
+</xs:schema>
