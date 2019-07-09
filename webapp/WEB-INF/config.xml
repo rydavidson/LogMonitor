@@ -11,41 +11,38 @@
 		Filter values should be valid java.util.Pattern regular expressions.
 	-->
 	<logs>
-		<log name="Test Log" type="test" location="">
-			<options showDividers="true" interval="5" lines="12" />
+		<log name="av.biz" type="log" location="..\..\av.biz\log\server.log">
+			<options showDividers="true" interval="5" lines="40" />
 			<styles>
-				<style visible="true" foreColour="#0000FF" backColour="#DDDDFF" />
-				<style visible="false" />
-				<style visible="false" />
-				<style visible="true" foreColour="#000000" backColour="#FFFFDD" />
-				<style visible="true" foreColour="#FF0000" backColour="#FFDDDD" />
-				<style visible="true" foreColour="#00FF00" backColour="#DDFFDD" />
+				<style/>
+				<style/>
+				<style/>
+				<style/>
+				<style/>
+				<style/>
 			</styles>
 		</log>
-		<log name="404 Filter" type="test" location="">
-			<options showDividers="true" interval="10" lines="5" />
+		<log name="av.web" type="log" location="..\log\server.log">
+			<options showDividers="true" interval="10" lines="40" />
 			<styles>
 				<style/>
 				<style/>
 				<style/>
 				<style/>
 				<style/>
-				<style visible="true" foreColour="#000000" backColour="#FFFF00" />
+				<style/>
 			</styles>
-			<filter>.*404.*</filter>
 		</log>
-		<log name="Plain" type="test" location="" >
-			<options showDividers="true" interval="5" lines="10" />
+		<log name="av.cfmx" type="log" location="..\..\av.cfmx\log\server.log" >
+			<options showDividers="true" interval="5" lines="40" />
 			<styles>
-				<style visible="true" foreColour="#000000" backColour="#DDDDDD" />
-				<style visible="true" foreColour="#000000" backColour="#FFFFFF" />
-				<style visible="true" foreColour="#000000" backColour="#DDDDDD" />
-				<style visible="true" foreColour="#000000" backColour="#FFFFFF" />
-				<style visible="true" foreColour="#000000" backColour="#DDDDDD" />
-				<style visible="true" foreColour="#000000" backColour="#FFFFFF" />
-				<style visible="true" foreColour="#000000" backColour="#DDDDDD" />												
+				<style/>
+				<style/>
+				<style/>
+				<style/>
+				<style/>
+				<style/>											
 			</styles>
-
 		</log>
 	</logs>  
 	
@@ -62,9 +59,9 @@
 	<!-- Most of these are self-explanatory, but be careful when changing them -->
 	<configs>
 		<config name="appName"             value="LogMonitor" />
-		<config name="appVersion"          value="v0.3.3" />
-		<config name="appLink"             value="http://codebox.no-ip.net/controller?page=logmonitor" />
-		<config name="appLinkText"         value="Codebox Software" />
+		<config name="appVersion"          value="v0.4.0" />
+		<config name="appLink"             value="https://github.com/rydavidson/LogMonitor" />
+		<config name="appLinkText"         value="Accela Inc" />
 		<config name="cookieLifeDays"      value="100" />
 		<config name="styleCount"          value="10" />
 		<config name="defaultLines"        value="3" />
