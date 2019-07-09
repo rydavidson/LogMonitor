@@ -12,7 +12,7 @@
 	-->
 	<logs>
 		<log name="av.biz" type="log" location="..\..\av.biz\log\server.log">
-			<options showDividers="true" interval="5" lines="40" />
+			<options showDividers="true" interval="5" lines="200" />
 			<styles>
 				<style/>
 				<style/>
@@ -23,7 +23,7 @@
 			</styles>
 		</log>
 		<log name="av.web" type="log" location="..\log\server.log">
-			<options showDividers="true" interval="10" lines="40" />
+			<options showDividers="true" interval="10" lines="200" />
 			<styles>
 				<style/>
 				<style/>
@@ -34,7 +34,7 @@
 			</styles>
 		</log>
 		<log name="av.cfmx" type="log" location="..\..\av.cfmx\log\server.log" >
-			<options showDividers="true" interval="5" lines="40" />
+			<options showDividers="true" interval="5" lines="200" />
 			<styles>
 				<style/>
 				<style/>
@@ -59,7 +59,7 @@
 	<!-- Most of these are self-explanatory, but be careful when changing them -->
 	<configs>
 		<config name="appName"             value="LogMonitor" />
-		<config name="appVersion"          value="v0.4.0" />
+		<config name="appVersion"          value="v0.4.1" />
 		<config name="appLink"             value="https://github.com/rydavidson/LogMonitor" />
 		<config name="appLinkText"         value="Accela Inc" />
 		<config name="cookieLifeDays"      value="100" />
