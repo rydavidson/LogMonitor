@@ -1,4 +1,4 @@
-<project default="compile">
+<project default="default">
     <property name = "src.dir" value = "source"/>
     <property name = "web.dir" value = "webapp"/>
     <property name = "build.dir" value = "${web.dir}/WEB-INF/classes"/>
@@ -9,6 +9,11 @@
         </fileset>
         <pathelement path = "${build.dir}"/>
     </path>
+    <target name="default">
+        <antcall target="clean"/>
+        <antcall target="compile"/>
+        <antcall target="build-war"/>
+    </target>
     <target name="compile">
         <mkdir dir="${build.dir}"/>
         <javac srcdir="${src.dir}" destdir="${build.dir}">
@@ -18,11 +23,15 @@
         </javac>
     </target>
     <target name="build-war" description="Build the war file">
+        <delete>
+            <fileset dir = "./">
+                <include name = "${name}.war"/>
+            </fileset>
+        </delete>
         <war destfile = "${name}.war" webxml = "webapp/WEB-INF/web.xml">
-            <fileset dir = "${web.dir}/WebContent">
+            <fileset dir = "${web.dir}">
                 <include name = "**/*.*"/>
             </fileset>
-            <classes dir = "${build.dir}/web"/>
         </war>
     </target>
     <target name = "clean" description = "Clean output directories">
