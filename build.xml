@@ -16,7 +16,7 @@
     </target>
     <target name="compile">
         <mkdir dir="${build.dir}"/>
-        <javac srcdir="${src.dir}" destdir="${build.dir}">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" target="1.7" source="1.7">
             <classpath>
                 <path refid = "master-classpath"/>
             </classpath>
