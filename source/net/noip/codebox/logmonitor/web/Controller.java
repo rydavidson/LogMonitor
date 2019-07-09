@@ -44,7 +44,7 @@ public class Controller extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest req, HttpServletResponse rsp) throws ServletException, IOException {
-        logger.info("Request params: " + req.getQueryString());
+        logger.fine("Request params: " + req.getQueryString());
         
         String requestType = req.getParameter(PARAM_REQ_TYPE);
         
