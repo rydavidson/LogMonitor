@@ -23,7 +23,7 @@
 			</styles>
 		</log>
 		<log name="av.web" type="log" location="..\log\server.log">
-			<options showDividers="true" interval="10" lines="200" />
+			<options showDividers="true" interval="5" lines="200" />
 			<styles>
 				<style/>
 				<style/>
